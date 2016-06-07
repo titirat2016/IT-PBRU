@@ -10,6 +10,7 @@ public class SignUpActivity extends AppCompatActivity {
     //ตำแหน่งประกาศตัวแปร
     private EditText nameEditText, surnameEditText, userEditText, passwordEditText;
     private String nameString, surnameString, userString, passwordString;
+    private static final String urlUpload = "http://swiftcodingthai.com/pbru2/add_user_master.php";
 
 
 
@@ -43,11 +44,16 @@ public class SignUpActivity extends AppCompatActivity {
 
         } else {
             //False
+            upLoadValueToServer();
 
 
         }
 
     } // click signup
+
+    private void upLoadValueToServer() {
+
+    }//upload
 
     private boolean checkSpace() {
 
