@@ -7,10 +7,18 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MyManage myManage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); //Statement จบด้วยเซมิโคลอนเสมอ
+        setContentView(R.layout.activity_main);//Statement จบด้วยเซมิโคลอนเสมอ
+
+        myManage = new MyManage(this);
+
+        //test Add new user
+        //myManage.addNewUser("123", "name", "sur", "user", "pass");
+
     } //Main Method
 
     public void clickSingUpMain(View view) {
